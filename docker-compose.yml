@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pgsql:
+    image: 'postgres:13.3-alpine'
+    ports:
+      - '15432:5432'
+    environment:
+      POSTGRES_DB: inventaris_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST: inventaris_db
+      POSTGRES_PORT: 5432
